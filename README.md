@@ -1,63 +1,42 @@
-\# ⚔️ RPG Terminal
-
-
+# ⚔️ RPG Terminal
 
 Um jogo de RPG rodando inteiramente no terminal, desenvolvido em Java com foco em boas práticas de \*\*Orientação a Objetos\*\*. O projeto cobre herança, polimorfismo, abstração, encapsulamento, interfaces, generics, collections, exceptions, streams, records e persistência de dados.
 
+---
 
+## 🎮 Funcionalidades
 
-\---
+- Escolha de classe: **Warrior** ou **Mage**, cada uma com atributos e habilidade única
 
+- Sistema de combate por turnos com cálculo de dano e defesa
 
+- Sistema de XP e progressão de nível com aumento de atributos
 
-\## 🎮 Funcionalidades
+- Inventário de itens (armas, poções)
 
+- Mapa navegável por texto com inimigos, tesouros e NPCs
 
+- Sistema de quests com rastreamento de progresso
 
-\- Escolha de classe: \*\*Warrior\*\* ou \*\*Mage\*\*, cada uma com atributos e habilidade única
+- Boss final: **Dragon**
 
-\- Sistema de combate por turnos com cálculo de dano e defesa
+- Salvar e carregar progresso em arquivo
 
-\- Sistema de XP e progressão de nível com aumento de atributos
+---
 
-\- Inventário de itens (armas, poções)
+## 🛠️ Tecnologias
 
-\- Mapa navegável por texto com inimigos, tesouros e NPCs
+- Java 21
 
-\- Sistema de quests com rastreamento de progresso
+- Maven
 
-\- Boss final: \*\*Dragon\*\*
+- IntelliJ IDEA
 
-\- Salvar e carregar progresso em arquivo
+---
 
-
-
-\---
-
-
-
-\## 🛠️ Tecnologias
-
-
-
-\- Java 21
-
-\- Maven
-
-\- IntelliJ IDEA
-
-
-
-\---
-
-
-
-\## 📁 Estrutura do Projeto
-
-
+## 📁 Estrutura do Projeto
 
 ```
-
 rpg-terminal/
 
 └── src/main/java/com/felipe/rpg/
@@ -112,72 +91,48 @@ rpg-terminal/
 
 ```
 
+---
 
+## 🚀 Como Rodar
 
-\---
+### Pré-requisitos
 
+- [JDK 21](https://adoptium.net/)
 
+- [Maven](https://maven.apache.org/)
 
-\## 🚀 Como Rodar
-
-
-
-\### Pré-requisitos
-
-
-
-\- \[JDK 21](https://adoptium.net/)
-
-\- \[Maven](https://maven.apache.org/)
-
-
-
-\### Passos
-
-
+### Passos
 
 ```bash
 
-\# Clone o repositório
+# Clone o repositório
 
 git clone https://github.com/seu-usuario/rpg-terminal.git
 
 
 
-\# Entre na pasta
+# Entre na pasta
 
 cd rpg-terminal
 
 
-
-\# Compile o projeto
+# Compile o projeto
 
 mvn compile
 
-
-
-\# Execute
+# Execute
 
 mvn exec:java -Dexec.mainClass="com.felipe.rpg.Main"
 
 ```
 
+---
 
-
-\---
-
-
-
-\## 🎲 Como Jogar
-
-
+## 🎲 Como Jogar
 
 Ao iniciar, você escolhe sua classe:
 
-
-
 ```
-
 Escolha sua classe:
 
 \[1] Warrior — Alto HP e defesa, habilidade de dano duplo
@@ -186,11 +141,7 @@ Escolha sua classe:
 
 ```
 
-
-
 Navegue pelo mapa com comandos de texto:
-
-
 
 ```
 
@@ -198,15 +149,11 @@ Navegue pelo mapa com comandos de texto:
 
 ```
 
-
-
 Ao encontrar um inimigo, o combate inicia automaticamente:
-
-
 
 ```
 
-\[BATALHA] Goblin selvagem apareceu!
+[BATALHA] Goblin selvagem apareceu!
 
 ─────────────────────────────────
 
@@ -228,15 +175,9 @@ Ao encontrar um inimigo, o combate inicia automaticamente:
 
 ```
 
+---
 
-
-\---
-
-
-
-\## 🗺️ Legenda do Mapa
-
-
+## 🗺️ Legenda do Mapa
 
 | Símbolo | Significado |
 
@@ -256,15 +197,9 @@ Ao encontrar um inimigo, o combate inicia automaticamente:
 
 | `B` | Boss |
 
+---
 
-
-\---
-
-
-
-\## 📊 Classes de Personagem
-
-
+## 📊 Classes de Personagem
 
 | Atributo | Warrior | Mage |
 
@@ -280,15 +215,9 @@ Ao encontrar um inimigo, o combate inicia automaticamente:
 
 | Habilidade | Golpe Brutal (2x dano) | Bola de Fogo (ignora defesa) |
 
+---
 
-
-\---
-
-
-
-\## 🧱 Conceitos OOP Aplicados
-
-
+## 🧱 Conceitos OOP Aplicados
 
 | Conceito | Onde aparece |
 
@@ -322,31 +251,25 @@ Ao encontrar um inimigo, o combate inicia automaticamente:
 
 | java.time | Timestamp do save e tempo de sessão |
 
+---
 
+## 🗺️ Roadmap
 
-\---
+- \[x] Classes base — `Entity`, `Player`, `Warrior`, `Mage`
 
+- \[x] Inimigos — `Enemy`, `Goblin`, `Dragon`
 
+- \[ ] Sistema de inventário e itens
 
-\## 🗺️ Roadmap
+- \[ ] `CombatEngine` completo
 
+- \[ ] Mapa navegável
 
+- \[ ] Sistema de quests
 
-\- \[x] Classes base — `Entity`, `Player`, `Warrior`, `Mage`
+- \[ ] Persistência de dados (save/load)
 
-\- \[x] Inimigos — `Enemy`, `Goblin`, `Dragon`
-
-\- \[ ] Sistema de inventário e itens
-
-\- \[ ] `CombatEngine` completo
-
-\- \[ ] Mapa navegável
-
-\- \[ ] Sistema de quests
-
-\- \[ ] Persistência de dados (save/load)
-
-\- \[ ] Boss final
+- \[ ] Boss final
 
 
 
